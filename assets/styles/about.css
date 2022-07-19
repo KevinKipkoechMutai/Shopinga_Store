@@ -1,14 +1,12 @@
-.{
-    font-family:sans-serif;
-}
 
 
 h1{
     text-align: center;
     text-shadow: 2px 4px 4px;
     font-weight: bold;
-    color: black;
+    color: blueviolet;
     font-size:xx-large;
+}
     
 h2{
     text-align: center;
@@ -19,32 +17,64 @@ body{
 }
 
 /* NAVIGATION */
-.main-content{
-    display: flex;
-    gap:5rem;
-    justify-content: end;
-    margin: 0px;
-    background-color: black;
-    
-
+*{
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
 }
-.main-content>*{
-    flex:1;
+
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    margin: 0 0 10px 0;
+    z-index: 1;
+    display: flex;
     align-items: center;
-    padding:10px;
-    color:whitesmoke;
-}
-.nav{
-    display: flex;
-    gap:2rem;
-    
-}
-.nav>*{
-    color:whitesmoke;
+    background-color: #8d579f;
 }
 
+.logo{
+    flex-basis: 20%;
+}
 
+.logo img{
+    height: 140px;
+    width: 200px;
+}
 
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover{
+    color: aqua;
+}
+
+.nav-links img{
+    height: 20px;
+    width: 30px;
+}
 
 .content{
 
@@ -59,20 +89,27 @@ body{
 
 .main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+   
+    
 }
 .main>*{
     margin: 10px;
+    box-shadow: 2px  3px 2px 3px grey;
+    padding:10px;
+    flex:1;
 
 }
 .sub-main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:2rem;
 
 }
 .sub-main>*{
     flex:1;
+    padding:10px;
+    box-shadow: 2px 3px 2px 3px grey;
 
 }
 .categories{
@@ -87,7 +124,7 @@ body{
 .categories>*{
     flex: 1;
     padding: 10px;
-    box-shadow: 5px 10px 5px 10px grey;
+    box-shadow: 2px 3px 2px 3px grey;
 }
 .footer{
     display: flex;
@@ -95,6 +132,9 @@ body{
     gap: 2rem;
 
 }
-.icon{
-    size: 0.625em;
+.card{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    color: red;
 }
