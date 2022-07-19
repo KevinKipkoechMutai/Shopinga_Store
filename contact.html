@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            height="50"
+            width="60"
+            src="./assets/Images/Shopinga-logos_white.png"
+            alt="shopinga-logo"
+          />
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+              <a
+                ><img
+                  src="http://www.clker.com/cliparts/U/D/n/G/6/h/white-shopping-cart-md.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="top-section">
+      <div class="top-section-img">
+        <img
+          src="./assets/Images/undraw_coolness_re_sllr.svg"
+          alt="stylishperson"
+        />
+      </div>
+      <div class="top-section-text">
+        <h2>Be stylish without hustle</h2>
+        <h3>Contact us today</h3>
+      </div>
+    </div>
+    <div class="container">
+      <form action="action_page.php">
+        <label for="product">Choose product/service</label>
+        <select id="products" name="products">
+          <option value="clothing">Clothing</option>
+          <option value="delivery">Delivery</option>
+          <option value="returns">Returns</option>
+          <option value="promotions">Promotions</option>
+        </select>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your first name"
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name"
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="southafrica">South Africa</option>
+          <option value="rwanda">Rwanda</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something..."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
