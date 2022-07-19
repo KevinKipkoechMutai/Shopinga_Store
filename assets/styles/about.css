@@ -1,0 +1,96 @@
+
+h1{
+    text-align: center;
+    text-shadow: 2px 4px 4px;
+    font-weight: bold;
+    color: black;
+    font-size:xx-large;
+}
+h2{
+    text-align: center;
+
+}
+body{
+    margin:5px;
+}
+
+/* NAVIGATION */
+.main-content{
+    display: flex;
+    gap:5rem;
+    justify-content: end;
+    margin: 0px;
+    background-color: black;
+    
+
+}
+.main-content>*{
+    flex:1;
+    align-items: center;
+    padding:10px;
+    color:whitesmoke;
+}
+.nav{
+    display: flex;
+    gap:2rem;
+    
+}
+.nav>*{
+    color:whitesmoke;
+}
+
+
+
+
+.content{
+
+
+    background-image: url(assets/images/undraw_team_work_k-80-m.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main>*{
+    margin: 10px;
+
+}
+.sub-main{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+
+}
+.sub-main>*{
+    flex:1;
+
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    margin: 10px;
+    justify-content: center;
+
+
+}
+.categories>*{
+    flex: 1;
+    padding: 10px;
+    box-shadow: 5px 10px 5px 10px grey;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.icon{
+    size: 0.625em;
+}
