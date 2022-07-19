@@ -178,4 +178,15 @@ footer{
     color: black;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.address{
+    font-style: italic;
 }
