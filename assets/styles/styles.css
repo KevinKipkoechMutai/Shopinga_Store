@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow:scroll;
     background: white;
 }
 
@@ -91,4 +91,44 @@ nav{
 .content p{
     font-weight: bold;
     text-align: center;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: #fff;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.women, .kids, .men{
+    border-radius: 10px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: auto;
+    align-items: center;
+    background-color: #8d579f;
+    color: black;
+    border: 1px solid #8d579f;
+}
+
+.categories h1{
+    text-align: center;
+}
+
+.categories img{
+    height: 200px;
+    width: 350px;
+    margin: 10px;
 }
