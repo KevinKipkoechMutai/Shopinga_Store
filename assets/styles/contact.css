@@ -56,6 +56,13 @@ nav{
   height: 20px;
   width: 30px;
 }
+
+.cart-btn{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .top-section{
     background-color: #8d579f;
     width: 100%;
