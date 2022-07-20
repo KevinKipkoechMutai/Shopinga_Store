@@ -55,13 +55,15 @@ function addItemToCart (price, imageSrc) {
             return;
         }
     }
-    var cartRowItems = 
-    `<div class='product-row'>
+    var cartRowItems = `
+        <div class='product-row'>
         <img class = 'cart-image' src="${imageSrc}" alt="">
         <span class='cart-price'>${price}</span>
         <input class="product-quantity" type="number" value="1">
         <button class='remove-btn'>Remove</button>
-        </div>`
+        </div>
+        
+        `
     
     productRow.innerHTML = cartRowItems;
     productRows.append(productRow);
@@ -101,18 +103,38 @@ function changeQuantity(event) {
 
 //Updating the total price
 function updateCartPrice(){
+    var cartItemContainer = document.querySelector('.add-to-cart')
+    var cartRow = cartItemContainer.querySelectorAll('.product-row')
     var total = 0
     for (var i=0; i<productRow.length; i+=2) {
         cartRow = productRow[i]
     var priceElement = cartRow.getElementsByClassName('cart-price')[0]
     var quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
-    var price = parsefloat(priceElement.innerText.replace('KSh.', ""))
+    var price = parseInt(priceElement.innerText.replace('KSh.', ""))
     var quantity = quantityElement.value
     total = total + (price*quantity)
     }
     document.getElementsByClassName('total-price')[0].innerText = 'KSh.' + total
     document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
+/*
+function updateCartPrice() {
+    let cartItemContainer = document.querySelector('.add-to-cart');
+    let cartRows = cartItemContainer.querySelectorAll('.product-row');
+
+    let total = 0
+    for (let i = 0; i < cartRows.length; i++) {
+        let cartRow = productRow[i]
+        let priceElement = cartRow.querySelector('.cart-price');
+        let quantityElement = cartRow.querySelector('.product-quantity');
+
+        let price = parseFloat(priceElement.innerText.replace('KSh.', ''))
+        let quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.querySelector('.total-price').innerText = 'KSh.' + total;
+}*/
 
 //Buy Items
 const purchaseBtn = document.querySelector('.purchase-btn');
