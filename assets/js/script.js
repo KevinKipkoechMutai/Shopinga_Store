@@ -28,7 +28,7 @@ cartModalOverlay.addEventListener('click', (e) => {
 const addToCart = document.getElementsByClassName('add-to-cart');
 const productRow = document.getElementsByClassName('product-row');
 
-for (var i=0; i<addToCart; i++){
+for (var i=0; i<addToCart.length; i++){
     button = addToCart[i];
     button.addEventListener('click', addToCartClicked)
 }
@@ -67,6 +67,7 @@ function addItemToCart (price, imageSrc) {
     productRows.append(productRow);
     productRow.getElementsByClassName('remove-btn')[0].addEventListener('click', removeItem)
     productRow.getElementsByClassName('product-quantity')[0].addEventListener('change', changeQuantity)
+    updateCartPrice()
 }
 
 //Removing products from the cart
