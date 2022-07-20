@@ -4,14 +4,15 @@ h1{
     text-align: center;
     text-shadow: 2px 4px 4px;
     font-weight: bold;
-    color: blueviolet;
+    color: black;
     font-size:xx-large;
 }
-    
 h2{
     text-align: center;
-
 }
+    
+
+
 body{
     margin:5px;
 }
@@ -79,7 +80,7 @@ nav{
 .content{
 
 
-    background-image: url(assets/images/undraw_team_work_k-80-m.svg);
+    background-image: url();
     background-repeat: no-repeat;
     background-size:cover;
     
@@ -115,9 +116,9 @@ nav{
 .categories{
     display: flex;
     flex-direction: row;
-    gap:2rem;
+    gap:1rem;
     margin: 10px;
-    justify-content: center;
+    
 
 
 }
@@ -125,16 +126,95 @@ nav{
     flex: 1;
     padding: 10px;
     box-shadow: 2px 3px 2px 3px grey;
+    align-items: center;
 }
-.footer{
+.images{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-items: center;
+    
+}
+.social{
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    gap:2rem;
+    flex-direction: column;
+
 
 }
-.card{
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-    color: red;
+.social>*{
+    
+    flex:1;
+    align-items: center;
 }
+.card{
+   
+    
+    font-weight: 500;
+    color:black;
+    background-color: #8d579f;
+    margin:10px;
+    padding:10px;
+    text-align: start;
+}
+
+/* footer designation */
+footer{
+    background-color: #8d579f;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+ }
+  
+ .footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+ }
+  
+ .address{
+    margin: 15px;
+ }
+  
+ .address h1{
+    font-style: italic;
+ }
+  
+ .socials{
+    display: flex;
+    flex-direction: row;
+ }
+  
+ .fa {
+    padding: 5px;
+    font-size: 50px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+ .fa-twitter, .fa-facebook, .fa-instagram{
+    color: black;
+ }
+  
+ .pics{
+    display: flex;
+    flex-direction: row;
+ }
+  
+ .footer img{
+    height: 50px;
+    width: 80px;
+    margin: 10px;
+ }
+  
+ .company, .services p{
+    margin: 5px;
+ }
+  
+ .products{
+    margin-left: 10px;
+ }
+ 
