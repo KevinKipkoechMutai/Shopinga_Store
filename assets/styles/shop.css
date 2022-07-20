@@ -117,3 +117,39 @@ footer{
 .products{
     margin-left: 10px;
 }
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu h1{
+    text-align: center;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #8d579f;
+    color: black;
+    border-radius: 10px;
+    height: 250px;
+    width: 260px;
+    padding: 10px;
+    margin: 25px auto;
+}
+
+.order{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
