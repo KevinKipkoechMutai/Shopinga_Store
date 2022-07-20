@@ -117,24 +117,7 @@ function updateCartPrice(){
     document.getElementsByClassName('total-price')[0].innerText = 'KSh.' + total
     document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
-/*
-function updateCartPrice() {
-    let cartItemContainer = document.querySelector('.add-to-cart');
-    let cartRows = cartItemContainer.querySelectorAll('.product-row');
 
-    let total = 0
-    for (let i = 0; i < cartRows.length; i++) {
-        let cartRow = productRow[i]
-        let priceElement = cartRow.querySelector('.cart-price');
-        let quantityElement = cartRow.querySelector('.product-quantity');
-
-        let price = parseFloat(priceElement.innerText.replace('KSh.', ''))
-        let quantity = quantityElement.value
-        total = total + (price * quantity)
-    }
-    total = Math.round(total * 100) / 100
-    document.querySelector('.total-price').innerText = 'KSh.' + total;
-}*/
 
 //Buy Items
 const purchaseBtn = document.querySelector('.purchase-btn');

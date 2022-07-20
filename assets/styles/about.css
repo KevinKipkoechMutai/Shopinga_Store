@@ -2,7 +2,7 @@
 
 h1{
     text-align: center;
-    text-shadow: 2px 4px 4px;
+    
     font-weight: bold;
     color: black;
     font-size:xx-large;
@@ -124,6 +124,7 @@ nav{
     box-shadow: 2px  3px 2px 3px grey;
     padding:10px;
     flex:1;
+    border-radius: 15px;
 
 }
 .sub-main{
@@ -136,6 +137,7 @@ nav{
     flex:1;
     padding:10px;
     box-shadow: 2px 3px 2px 3px grey;
+    border-radius: 15px;
 
 }
 .categories{
@@ -152,6 +154,7 @@ nav{
     padding: 10px;
     box-shadow: 2px 3px 2px 3px grey;
     align-items: center;
+    border-radius: 10px;
 }
 .images{
     height: 100px;
@@ -181,6 +184,7 @@ nav{
     margin:10px;
     padding:10px;
     text-align: start;
+    border-radius: 8px;
 }
 
 /* footer designation */

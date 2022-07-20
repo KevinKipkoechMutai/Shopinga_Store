@@ -51,9 +51,33 @@ nav{
     color: aqua;
 }
 
-.nav-links img{
-    height: 20px;
-    width: 30px;
+.cart-btn{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cart{
+    position: relative;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 1em 4em 0 0;
+}
+
+.cart-quantity{
+    color: white;
+    background-color: red;
+    padding: .2em .3em;
+    position: absolute;
+    margin: 0.8em 7.5em 0 0;
+    right: 0;
+    border: solid 2px red;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.div{
+    background: linear-gradient(#d3d3d3, white);
 }
 
 .intro-section{
