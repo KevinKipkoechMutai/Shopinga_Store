@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="assets/styles/shop.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head> 
     <body>
+        <!---Header Section-->
         <header>
             <nav>
                 <div class="logo">
@@ -19,196 +21,226 @@
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a><img src="http://www.clker.com/cliparts/U/D/n/G/6/h/white-shopping-cart-md.png"></a></li>
+                        <li>
+                            <i id="cart" class="fas fa-shopping-cart"></i>
+                            <span class="cart-quantity">0</span>
+                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
+        <!--Cart Modal System-->
+        <div class="cart-modal-overlay">
+            <div class="cart-modal">
+                <i id="close-btn" class="fas fa-times"></i>
+                <h1 class="cart-is-empty">Cart is Empty</h1>
+
+                <div class="product-rows"></div>
+                <div class="total">
+                    <h1 class="cart-total">TOTAL</h1>
+                    <span class="total-price">KSh.0</span>
+                    <button class="purchase-btn">PURCHASE</button>
+                </div>
+            </div>
+        </div>
+        <!---Women menu-->
         <div class="women menu">
             <h1>Women</h1>
             <div class="row">
                 <div class="item dress">
                     <img src="assets/images/dress.jpg" height="200" width="250">
-                    <h3>Green dress with black pattern</h3>
+                    <h3 id="product">Black Dress</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">8000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.8000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item bag">
                     <img src="assets/images/handbag.jpg" height="200" width="250">
-                    <h3>Leather Handbag</h3>
+                    <h3 id="product">Leather Handbag</h3>
                     <p>Delivered in three days</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">6500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.6500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item blouse">
                     <img src="assets/images/blouse.jpg" height="200" width="250">
-                    <h3>Black Blouse</h3>
+                    <h3 id="product">Black Blouse</h3>
                     <p>Delivered in three days</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">4500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.4500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="item trousers">
                     <img src="assets/images/trousers.jpg" height="200" width="250">
-                    <h3>Blue Trousers</h3>
+                    <h3 id="product">Blue Trousers</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">4000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.4000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item swimsuit">
                     <img src="assets/images/swimsuit.jpg" height="200" width="250">
-                    <h3>Green Swimsuit</h3>
+                    <h3 id="product">Green Swimsuit</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">2500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.2500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item top">
                     <img src="assets/images/top.jpg" height="200" width="250">
-                    <h3>Pink Top</h3>
+                    <h3 id="product">Pink Top</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">5000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.5000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="more">
+            <h2><a>See More</a></h2>
+        </div>
         <hr>
+        <!--Kids menu-->
         <div class="kids menu">
             <h1>Kids</h1>
             <div class="row">
                 <div class="item shoes">
                     <img src="assets/images/shoes.jpg" height="200" width="250">
-                    <h3>White Shoes</h3>
+                    <h3 id="product">White Shoes</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">2000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.2000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item jumpsuit">
                     <img src="assets/images/jumpsuit.jpg" height="200" width="250">
-                    <h3>Denim Jumpsuit</h3>
+                    <h3 id="product">Denim Jumpsuit</h3>
                     <p>Delivered in three days</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">1500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.1500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item glasses">
                     <img src="assets/images/glasses.jpeg" height="200" width="250">
-                    <h3>Cool Sunglasses</h3>
+                    <h3 id="product">Cool Sunglasses</h3>
                     <p>Delivered in three days</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">4500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.4500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="item shirt">
                     <img src="assets/images/shirt.jpg" height="200" width="250">
-                    <h3>White Shirt</h3>
+                    <h3 id="product">White Shirt</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">4000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.4000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item short">
                     <img src="assets/images/shorts.jpg" height="200" width="250">
-                    <h3>Black Shorts</h3>
+                    <h3 id="product">Black Shorts</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">2500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.2500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="item socks">
                     <img src="assets/images/socks.jpeg" height="200" width="250">
-                    <h3>Yellow Socks</h3>
+                    <h3 id="product">Yellow Socks</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">5000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.5000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="more">
+            <h2><a>See More</a></h2>
+        </div>
         <hr>
+        <!--Men menu-->
         <div class="men menu">
             <h1>Men</h1>
             <div class="row">
                 <div class="item shirt">
-                    <img src="assets/images/shoes.jpg" height="200" width="250">
-                    <h3>Blue Shirt</h3>
+                    <img src="assets/images/men-shirt.jpg" height="200" width="250">
+                    <h3 id="product">Blue Shirt</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">2000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.1800</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="item jumpsuit">
-                    <img src="assets/images/jumpsuit.jpg" height="200" width="250">
-                    <h3>Denim Jumpsuit</h3>
+                <div class="item tie">
+                    <img src="assets/images/tie.webp" height="200" width="250">
+                    <h3 id="product">Black Tie</h3>
                     <p>Delivered in three days</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">1500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="item glasses">
-                    <img src="assets/images/glasses.jpeg" height="200" width="250">
-                    <h3>Cool Sunglasses</h3>
+                <div class="item shoes">
+                    <img src="assets/images/78e78695-74ab-4162-b052-67f004aad13b.webp" height="200" width="250">
+                    <h3 id="product">Nike Shoes</h3>
                     <p>Delivered in three days</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">4500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.4500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="item shirt">
-                    <img src="assets/images/shirt.jpg" height="200" width="250">
-                    <h3>White Shirt</h3>
+                <div class="item suit">
+                    <img src="assets/images/suitmen.jpg" height="200" width="250">
+                    <h3 id="product">White Suit</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">4000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.24000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="item short">
-                    <img src="assets/images/shorts.jpg" height="200" width="250">
-                    <h3>Black Shorts</h3>
+                <div class="item briefcase">
+                    <img src="assets/images/briefcase.jpg" height="200" width="250">
+                    <h3 id="product">Leather Briefcase</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">2500</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.9500</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
-                <div class="item socks">
-                    <img src="assets/images/socks.jpeg" height="200" width="250">
-                    <h3>Yellow Socks</h3>
+                <div class="item sweatpants">
+                    <img src="assets/images/sweatpants.jpg" height="200" width="250">
+                    <h3 id="product">Grey Sweatpants</h3>
                     <p>Shipped from overseas</p>
                     <div class="order">
-                        <p>KSh <a href="#" id="price">5000</a></p>
-                        <button>Add to Cart</button>
+                        <span class="product-price">KSh.3000</span>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="more">
+            <h2><a>See More</a></h2>
+        </div>
+        <!--Footer section-->
         <footer>
             <div class="address footer">
                 <h1>Shopinga</h1>
@@ -246,5 +278,6 @@
                 <p>Wigs</p>
             </div>
         </footer>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
