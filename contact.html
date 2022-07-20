@@ -1,0 +1,137 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            height="50"
+            width="60"
+            src="./assets/Images/Shopinga-logos_white.png"
+            alt="shopinga-logo"
+          />
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+              <div class="cart-btn">
+                <i id="cart" class="fas fa-shopping-cart"></i>
+                <span class="cart-quantity">0</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="top-section">
+      <div class="top-section-img">
+        <img
+          src="./assets/Images/undraw_coolness_re_sllr.svg"
+          alt="stylishperson"
+        />
+      </div>
+      <div class="top-section-text">
+        <h2>Be stylish without hustle</h2>
+        <h3>Contact us today</h3>
+      </div>
+    </div>
+    <div class="container">
+      <form action="action_page.php">
+        <label for="product">Choose product/service</label>
+        <select id="products" name="products">
+          <option value="clothing">Clothing</option>
+          <option value="delivery">Delivery</option>
+          <option value="returns">Returns</option>
+          <option value="promotions">Promotions</option>
+        </select>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your first name"
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name"
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="kenya">Kenya</option>
+          <option value="uganda">Uganda</option>
+          <option value="southafrica">South Africa</option>
+          <option value="rwanda">Rwanda</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something..."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <footer>
+      <div class="address footer">
+        <h1>Shopinga</h1>
+        <p>Your one-stop shop for all your favorite clothes</p>
+        <div class="socials">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <h3>Get the app</h3>
+        <div class="pics">
+          <img
+            src="https://seeklogo.com/images/G/get-it-on-google-play-badge-logo-8CDE582776-seeklogo.com.png"
+          />
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg"
+          />
+        </div>
+        <div class="access"></div>
+      </div>
+      <div class="services footer">
+        <h2>Services</h2>
+        <p>Shopping and Payment</p>
+        <p>Ferms and Conditions</p>
+      </div>
+      <div class="company footer">
+        <h2>Company</h2>
+        <p>About</p>
+        <p>Products</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="products footer">
+        <h2>Products</h2>
+        <p>Clothes</p>
+        <p>Shoeware</p>
+        <p>Jewellery</p>
+        <p>Wigs</p>
+      </div>
+    </footer>
+  </body>
+</html>
