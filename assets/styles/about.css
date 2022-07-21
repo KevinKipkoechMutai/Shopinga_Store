@@ -33,12 +33,11 @@ h2{
     font-weight: bolder;
 }
 
-    
-
-
-body{
-    margin:5px;
+footer{
+    padding-top: 25px;
 }
+
+
 
 /* NAVIGATION */
 *{
@@ -52,7 +51,7 @@ main{
     height: 100%;
     position: relative;
     overflow: hidden;
-    background: white;
+    background: linear-gradient(#d3d3d3, white);
 }
 
 nav{
@@ -108,26 +107,38 @@ nav{
     background-image: url();
     background-repeat: no-repeat;
     background-size:cover;
+    margin: 0 120px;
+    
     
 }
 
+.content img{
+    align-items: center;
+    margin-left: 400px;
+    height: 500px;
+}
 
+.content p{
+    font-size: larger;
+    margin-top: 10px;
+}
 
 .main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
    
     
 }
 .main>*{
     margin: 10px;
-    box-shadow: 2px  3px 2px 3px grey;
+    
     padding:10px;
     flex:1;
-    border-radius: 15px;
+    
 
 }
-.sub-main{
+/*.sub-main{
     display: flex;
     flex-direction: column;
     gap:2rem;
@@ -139,7 +150,7 @@ nav{
     box-shadow: 2px 3px 2px 3px grey;
     border-radius: 15px;
 
-}
+}*/
 .categories{
     display: flex;
     flex-direction: row;
