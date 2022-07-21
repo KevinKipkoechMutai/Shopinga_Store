@@ -1,4 +1,4 @@
-# Shopinga_Store
+# Shopinga Fashion Store
 Shopinga is an online fashion store that sells clothing items for kids, women and men. All orders are made online and one can add as many items as they like to the cart.
 Completed on 21/07/2022
 
@@ -55,7 +55,7 @@ MIT License Copyright (c) 2022 Kevin Kipkoech
 
 [Sharon Nyamongo](nyamongosharon88@gmail.com)
 
-LinkedIn: [Stephen Munyao](stephen.munyao@student.moringaschool.com)
+[Stephen Munyao](stephen.munyao@student.moringaschool.com)
 
 
 
